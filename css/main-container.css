@@ -1,0 +1,36 @@
+.main-container {
+	height: 100vh;
+}
+.content {
+	max-width: 60%;
+	margin: 20rem;
+	margin: 0 auto;
+}
+.content h1 {
+	font-size: 3rem;
+	margin: 4.5rem;
+}
+.content p {
+	font-size: 1rem;
+	margin: 2.5rem;
+}
+
+.btn {
+	margin: 2rem;
+	background-color: 'yellow';
+	padding: 0.5rem;
+	font-weight: bold;
+	border-radius: 0.2rem;
+	border: 0;
+}
+
+@media (width: 768px) {
+	.content {
+		max-width: 60%;
+		margin: 10rem;
+		margin: 0 auto;
+	}
+	.content h1 {
+		font-size: 2rem;
+	}
+}

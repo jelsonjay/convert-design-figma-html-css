@@ -1,0 +1,32 @@
+.hero {
+	width: 100%;
+	min-height: 100vh;
+	padding-left: 10%;
+	padding-right: 10%;
+	overflow: hidden;
+}
+
+.header-menu {
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+.logo-img {
+	width: 2rem;
+	cursor: pointer;
+	margin: 1.25rem 0;
+	fill: #fff;
+}
+
+.header-menu ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 20px;
+}
+.header-menu li {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 20px;
+}
