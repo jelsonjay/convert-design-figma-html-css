@@ -28,8 +28,8 @@ body {
 .hero {
 	width: 100%;
 	max-height: 100hv;
-	padding-left: 8%;
-	padding-right: 8%;
+	padding-left: 20%;
+	padding-right: 20%;
 	overflow: hidden;
 }
 .header-menu {
@@ -46,6 +46,7 @@ body {
 .menu-icon {
 	width: 25px;
 	cursor: pointer;
+	display: none;
 }
 
 /*==========NAV=======*/
@@ -73,18 +74,20 @@ header .icons {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 100px 0;
+	margin: 10px 0;
 }
 
 .col-1 {
-	flex-basis: 45%;
+	flex-basis: 47%;
 	position: relative;
 	margin-left: 50px;
+	margin: 3%;
 }
 
 .col-1 h1 {
-	font-size: 64px;
+	font-size: 3rem;
 	font-weight: 700;
+	line-height: 1;
 	margin-bottom: 40px;
 }
 
@@ -92,14 +95,14 @@ header .icons {
 	font-size: 1rem;
 	font-weight: 100;
 	margin-bottom: 40px;
-	width: 507;
+	width: 507px;
 }
 
 .col-1::after {
 	content: '';
 	width: 10px;
-	height: 57%;
-	background: linear-gradient(to right, #fb5283, #ff3527);
+	height: 70%;
+	background: linear-gradient(to right, #f9e95a, #ff3527);
 	position: absolute;
 	left: -40px;
 	top: 8px;
@@ -108,9 +111,10 @@ header .icons {
 button {
 	width: 187px;
 	border: 0;
+	font-size: 1rem;
+	color: var(--clr-white);
 	padding: 12px 10px;
 	outline: none;
-	color: var(--clr-yellow);
 	background: linear-gradient(to right, #fb5283, #ff3527);
 	border-radius: 4px;
 	cursor: pointer;
@@ -119,7 +123,7 @@ button {
 button i {
 	width: 30px;
 	display: none;
-	color: #ffff;
+	color: var(--clr-white);
 }
 
 button:hover i {
@@ -130,4 +134,56 @@ button:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.col-2 {
+	position: relative;
+	flex-basis: 50%;
+	display: flex;
+	align-items: center;
+}
+.col-2 img {
+	width: 90%;
+}
+
+@media only screen and (max-width: 700px) {
+	nav ul {
+		width: 100%;
+		min-height: 30%;
+		background-color: rgb(56, 78, 191);
+		position: absolute;
+		top: 80px;
+		right: 0;
+		z-index: 2;
+	}
+	nav ul li {
+		display: block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	nav ul li a {
+		color: var(--clr-white);
+	}
+	.menu-icon {
+		display: block;
+	}
+	#menuList {
+		overflow: hidden;
+		transition: 0.5s;
+	}
+	.row {
+		flex-direction: column-reverse;
+		margin: 50px 0;
+	}
+	.col-2 {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.col-1 {
+		width: 100%;
+		margin-right: 10px;
+	}
+	.col-1 h1 {
+		font-size: 1.5rem;
+	}
 }
