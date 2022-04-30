@@ -146,7 +146,7 @@ button:hover {
 	width: 90%;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
 	nav ul {
 		width: 100%;
 		min-height: 30%;
