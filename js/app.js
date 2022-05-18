@@ -1,10 +1,6 @@
-let menuList = document.querySelector('#menuList');
-menuList.style.maxHeight = '0px';
+const hamburger = document.getElementsByClassName('hamburger')[0];
+const menu = document.getElementsByClassName('menuList')[0];
 
-function toggleMenu() {
-	if ((menuList.style.maxHeight = '0px')) {
-		menuList.style.maxHeight = '130px';
-	} else {
-		menuList.style.maxHeight = '0px';
-	}
-}
+hamburger.addEventListener('click', () => {
+	menu.classList.toggle('active');
+});
