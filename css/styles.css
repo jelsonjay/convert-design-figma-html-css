@@ -9,6 +9,7 @@
 	--clr-white: #ffff;
 	--clr-black: #121212;
 	--clr-yellow: #f9e95a;
+	--gradient: linear-gradient(to right, #fb5283, #ff3527);
 }
 
 a {
@@ -102,7 +103,7 @@ header .icons {
 	content: '';
 	width: 10px;
 	height: 70%;
-	background: linear-gradient(to right, #f9e95a, #ff3527);
+	background: var(--clr-yellow);
 	position: absolute;
 	left: -40px;
 	top: 8px;
@@ -115,7 +116,7 @@ button {
 	color: var(--clr-white);
 	padding: 12px 10px;
 	outline: none;
-	background: linear-gradient(to right, #fb5283, #ff3527);
+	background: var(--clr-yellow);
 	border-radius: 4px;
 	cursor: pointer;
 	transition: 0.5s;
@@ -149,7 +150,7 @@ button:hover {
 @media only screen and (max-width: 768px) {
 	nav ul {
 		width: 100%;
-		min-height: 30%;
+		min-height: 100%;
 		background-color: rgb(56, 78, 191);
 		position: absolute;
 		top: 80px;
@@ -186,4 +187,27 @@ button:hover {
 	.col-1 h1 {
 		font-size: 1.5rem;
 	}
+}
+
+/*============Product=============*/
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 0.8rem;
+}
+.card {
+	background-color: aliceblue;
+	border-radius: 0.5rem;
+	width: 179px;
+	height: 155px;
+	left: 544px;
+	top: 450px;
+}
+.cardTitle h3 {
+	text-transform: capitalize;
+	margin-top: 0.8rem;
+}
+.cardTitle span {
+	margin-top: 0.8rem;
 }
